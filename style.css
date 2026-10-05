@@ -920,9 +920,15 @@ h3 {
 
 .experience-grid {
     display: grid;
-    grid-template-columns: minmax(280px, 0.8fr) 1.2fr;
-    gap: 8rem;
+    grid-template-columns: minmax(280px, 0.7fr) 1.3fr; /* Give more space to the timeline */
+    gap: 4rem; /* Reduced from 8rem */
 }
+
+.experience-grid .section-title h2 {
+    font-size: clamp(2.5rem, 4.5vw, 4.8rem);
+    overflow-wrap: break-word;
+}
+
 
 .timeline {
     border-top: 1px solid var(--border);
